@@ -8,7 +8,6 @@ import org.springframework.data.repository.query.Param;
 
 import com.arabsoft.ajir.entities.CalPersPK;
 import com.arabsoft.ajir.entities.Cal_Pers;
-import com.arabsoft.ajir.entities.Libre_demande;
 
 public interface CalPersDao extends JpaRepository<Cal_Pers, CalPersPK>{
 	@Query(value="select 	t.cod_soc,t.mat_pers,t.years,t.months,t.days, to_char(to_date(t.years||'-'||lpad(t.months,2,'0')||'-'|| (lpad(t.days,2,'0')),'yyyy-mm-dd'),'yyyy-mm-dd') dateC,"

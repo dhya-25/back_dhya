@@ -1,10 +1,8 @@
 package com.arabsoft.ajir.entities;
 
-import java.sql.Date;
 
 import javax.persistence.Column;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class ReportEntity {
 

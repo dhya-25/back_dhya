@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.arabsoft.ajir.entities.CleDemCng;
 import com.arabsoft.ajir.entities.SoldConge;
 import com.arabsoft.ajir.entities.SoldCongePK;
 

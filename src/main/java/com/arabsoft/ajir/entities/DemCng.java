@@ -885,7 +885,6 @@ public class DemCng implements Serializable{
 		this.dat_nbo = dat_nbo;
 		this.dat_prev_ret = dat_prev_ret;
 		this.dat_retour = dat_retour;
-		this.nbo_ret = nbo_ret;
 		this.dat_nbo_ret = dat_nbo_ret;
 		this.cng_prol = cng_prol;
 		this.num_dcng_prol = num_dcng_prol;

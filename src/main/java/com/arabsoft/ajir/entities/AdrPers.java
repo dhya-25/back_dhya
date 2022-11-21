@@ -56,6 +56,24 @@ public class AdrPers implements Serializable{
 	private String rec_mail;
 	@Column(name = "COD_USER")
 	private String cod_user;
+	@Column(insertable = false, updatable = false)
+
+	private String lib_gouv;
+	
+	public String getLib_gouv() {
+		return lib_gouv;
+	}
+
+
+
+
+	public void setLib_gouv(String lib_gouv) {
+		this.lib_gouv = lib_gouv;
+	}
+
+
+
+
 	public AdrPers() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -64,10 +82,14 @@ public class AdrPers implements Serializable{
 	
 	
 
+	
+
+
+
 	public AdrPers(CleAdrPers id, String cod_gouv, String cod_deleg, String cod_post, String rue, String rue_a,
 			String tel_pers, String fax_pers, String adr_courant, String adrelectronique, String tel_port_pers,
-			Long numero_adr, String etat_adr, String immb_pers, String app_pers, String local_pers, String codeSoc,
-			String rec_mail, String cod_user) {
+			Long numero_adr, String etat_adr, String immb_pers, String app_pers, String local_pers, String rec_mail,
+			String cod_user, String lib_gouv) {
 		super();
 		this.id = id;
 		this.cod_gouv = cod_gouv;
@@ -87,6 +109,7 @@ public class AdrPers implements Serializable{
 		this.local_pers = local_pers;
 		this.rec_mail = rec_mail;
 		this.cod_user = cod_user;
+		this.lib_gouv = lib_gouv;
 	}
 
 
